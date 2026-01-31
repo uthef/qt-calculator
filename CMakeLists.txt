@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.27)
-project(qt_calculator)
+project(qt-calculator)
+enable_testing()
 add_subdirectory(expeval)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -16,9 +17,10 @@ find_package(Qt6 COMPONENTS
         Core
         Gui
         Widgets
-        REQUIRED)
+        REQUIRED
+)
 
-add_executable(qt_calculator
+add_executable(${PROJECT_NAME}
         ui/calculator_form.ui
         ui/about_popup.ui
         resources.qrc
@@ -39,7 +41,7 @@ add_executable(qt_calculator
         src/Configuration.cpp
 )
 
-target_link_libraries(qt_calculator
+target_link_libraries(${PROJECT_NAME}
         Qt::Core
         Qt::Gui
         Qt::Widgets

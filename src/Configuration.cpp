@@ -23,7 +23,7 @@ Configuration::Configuration() {
 
     QFile file(fullPath);
 
-    file.open(QIODeviceBase::ReadWrite);
+    bool opened = file.open(QIODeviceBase::ReadWrite);
     jsonBytes = file.readAll();
     file.close();
 
@@ -42,7 +42,7 @@ void Configuration::save() {
     makeSureDirExists();
 
     QFile file(fullPath);
-    file.open(QIODeviceBase::WriteOnly);
+    bool opened = file.open(QIODeviceBase::WriteOnly);
 
     file.write(document.toJson(QJsonDocument::Compact));
 
