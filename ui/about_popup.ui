@@ -3,7 +3,7 @@
  <class>AboutPopup</class>
  <widget class="QDialog" name="AboutPopup">
   <property name="windowModality">
-   <enum>Qt::WindowModal</enum>
+   <enum>Qt::WindowModality::WindowModal</enum>
   </property>
   <property name="geometry">
    <rect>
@@ -41,10 +41,10 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple calculator&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Version: 0.0.2&lt;br/&gt;Developer: &lt;a href=&quot;https://github.com/uthef&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#646464;&quot;&gt;https://github.com/uthef&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;© 2024-2025 Joseph Brylski&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple calculator&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Version: 0.0.2&lt;br/&gt;Developer: &lt;a href=&quot;https://github.com/uthef&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#646464;&quot;&gt;https://github.com/uthef&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;© 2024-2026 Joseph Evergrey&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
-      <enum>Qt::MarkdownText</enum>
+      <enum>Qt::TextFormat::MarkdownText</enum>
      </property>
     </widget>
    </item>
@@ -57,10 +57,10 @@
       </sizepolicy>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::StandardButton::Ok</set>
      </property>
      <property name="centerButtons">
       <bool>false</bool>
